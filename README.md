@@ -8,7 +8,7 @@ Ver: https://www.youtube.com/watch?v=5THIT2mFFNA
 ```
 ![Foto anuncio Charla](https://github.com/cabustillo13/Charla-procesamiento-de-imagenes/blob/master/Recursos/charla.jpg)
 
-# Introducción:
+# Introducción
 
 Esta charla será una breve explicación para iniciarse en el amplió campo del procesamiento de imágenes basándonos en la librería OpenCV.
 
