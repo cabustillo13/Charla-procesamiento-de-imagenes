@@ -4,8 +4,9 @@
 Esta charla la proporcione para el youtube live de DevTeam504.
 Lugar: San Pedro Sula, Honduras.
 Fecha: 04/Septiembre/2020.
-```
 Ver: https://www.youtube.com/watch?v=5THIT2mFFNA
+```
+![Foto anuncio Charla](https://github.com/cabustillo13/Charla-procesamiento-de-imagenes/blob/master/Recursos/charla.jpg)
 
 # Introducción:
 
