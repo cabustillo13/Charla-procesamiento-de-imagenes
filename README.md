@@ -8,7 +8,7 @@ Ver: https://www.youtube.com/watch?v=5THIT2mFFNA
 
 # Introducción:
 
-Esta charla será una breve explicación para iniciarse en el amplió campo del procesamiento de imágenes basándonos en la librería OpenCv.
+Esta charla será una breve explicación para iniciarse en el amplió campo del procesamiento de imágenes basándonos en la librería OpenCV.
 
 En primera instancia mostraremos un caso de uso sobre un agente racional que aprende, no omnisciente, que al entrenarlo aprenda a partir de sus percepciones y le permita ser autónomo gracias a la experiencia adquirida.
 
