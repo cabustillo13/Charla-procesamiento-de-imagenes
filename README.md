@@ -18,4 +18,7 @@ Luego se hablará de las etapas esenciales que se debe tener en cuenta para el p
 
 # Recursos
 
-Se analizaron las clases grape Blue, Pink y White del dataset Fruits 360  en Kaggle (![VER](https://www.kaggle.com/moltean/fruits)).
+```
+Se analizaron las clases grape Blue, Pink y White del dataset Fruits 360  en Kaggle.
+
+```
