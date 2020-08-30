@@ -27,7 +27,7 @@ grapeWhite = io.ImageCollection('./Imagenes/Train/grapeWhite/*.png:./Imagenes/Tr
 grapeBlue = io.ImageCollection('./Imagenes/Train/grapeBlue/*.png:./Imagenes/Train/grapeBlue/*.jpg')
 grapePink = io.ImageCollection('./Imagenes/Train/grapePink/*.png:./Imagenes/Train/grapePink/*.jpg')
         
-#Elemento de ferreteria
+#Elemento para cada tipo de uva
 class Elemento:
     def __init__(self):
         self.pieza = None
