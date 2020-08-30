@@ -1,16 +1,8 @@
 import numpy as np
-from matplotlib import pyplot as plt
-import matplotlib.patches as mpatches
-plt.rcParams['image.cmap'] = 'gray'
-from mpl_toolkits.mplot3d import Axes3D
-from skimage import io, color, img_as_float, filters
-from skimage.feature import hog
+from skimage import io, filters
 import cv2
-import mahotas
     
 def extraccion(image):
-    ##TRANSFORMACION
-    image = cv2.resize(image, (500, 400))         #Convertir la imagen de 1220x1080 a 500x400
     ##PRE PROCESAMIENTO
     aux = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) #Convertir a escala de grises
     ##FILTRACION
@@ -22,7 +14,6 @@ def extraccion(image):
     return aux, [hu[0], hu[1], hu[3]]
 
 #Analisis de la base de datos (Train)
-##Entrenamiento de la base de datos 
 grapeWhite = io.ImageCollection('./Imagenes/Train/grapeWhite/*.png:./Imagenes/Train/grapeWhite/*.jpg')
 grapeBlue = io.ImageCollection('./Imagenes/Train/grapeBlue/*.png:./Imagenes/Train/grapeBlue/*.jpg')
 grapePink = io.ImageCollection('./Imagenes/Train/grapePink/*.png:./Imagenes/Train/grapePink/*.jpg')
@@ -74,7 +65,6 @@ print("Cantidad de imagenes analizadas: ")
 print(len(datos))
 
 # Elemento a evaluar
-#Recordar aplicar Transformacion.py cuando se quiera evaluar una nueva imagen.
 test = Elemento()
 numero = input("Introduce numero de la foto: ")
 
