@@ -17,3 +17,8 @@ En primera instancia mostraremos un caso de uso sobre un agente racional que apr
 Luego se hablará de las etapas esenciales que se debe tener en cuenta para el procesamiento de imágenes tales como: Adquisición de imágenes; Transformación; Prepocesamiento; Filtración; Extracción de rasgos y Clasificación de objetos.
 
 # Recursos
+
+```
+Se analizaron las clases grape Blue, Pink y White del dataset Fruits 360  en Kaggle.
+Ver: https://www.kaggle.com/moltean/fruits
+```
