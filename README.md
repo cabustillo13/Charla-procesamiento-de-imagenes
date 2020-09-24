@@ -36,4 +36,9 @@ En el cual  le presentamos una imagen al algoritmo y éste nos diga a qué clase
 Se analizaron las clases grape Blue, Pink y White del dataset Fruits 360  en Kaggle.
 Ver: https://www.kaggle.com/moltean/fruits
 ```
+**Licencia de las imágenes**
+```
+MIT License
+Copyright (c) 2017-2020 Mihai Oltean, Horea Muresan
+```
 
