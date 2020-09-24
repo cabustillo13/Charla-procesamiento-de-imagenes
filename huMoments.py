@@ -31,9 +31,9 @@ def extraccion(image):
 
 #Analisis de la base de datos (YTrain)
 ##Entrenamiento de la base de datos 
-tornillo = io.ImageCollection('./Imagenes/Train/grapeWhite/*.png:./Imagenes/Train/grapeWhite/*.jpg')
-arandela = io.ImageCollection('./Imagenes/Train/grapeBlue/*.png:./Imagenes/Train/grapeBlue/*.jpg')
-clavo = io.ImageCollection('./Imagenes/Train/grapePink/*.png:./Imagenes/Train/grapePink/*.jpg')
+grapeWhite = io.ImageCollection('./Imagenes/Train/grapeWhite/*.png:./Imagenes/Train/grapeWhite/*.jpg')
+grapeBlue = io.ImageCollection('./Imagenes/Train/grapeBlue/*.png:./Imagenes/Train/grapeBlue/*.jpg')
+grapePink = io.ImageCollection('./Imagenes/Train/grapePink/*.png:./Imagenes/Train/grapePink/*.jpg')
         
 #Elemento de ferreteria
 class Elemento:
@@ -50,45 +50,45 @@ ax = fig.add_subplot(111, projection='3d')
 datos = []
 i = 0
 
-# Analisis de tornillos
+# Analisis de grapeWhite
 iter = 0
-for objeto in tornillo:
+for objeto in grapeWhite:
     datos.append(Elemento())
-    datos[i].pieza = 'Tornillo'
+    datos[i].pieza = 'grapeWhite'
     datos[i].image, datos[i].caracteristica = extraccion(objeto)
-    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='y', marker='o')
+    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='green', marker='o')
     i += 1
     iter += 1
-print("Tornillos OK")
+print("grapeWhite OK")
 
-# Analisis de arandelas
+# Analisis de grapeBlue
 iter = 0
-for objeto in arandela:
+for objeto in grapeBlue:
     datos.append(Elemento())
-    datos[i].pieza = 'Arandela'
+    datos[i].pieza = 'grapeBlue'
     datos[i].image, datos[i].caracteristica = extraccion(objeto)
-    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='b', marker='o')
+    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='blue', marker='o')
     i += 1
     iter += 1
-print("Arandelas OK")
+print("grapeBlue OK")
 
-# Analisis de clavos
+# Analisis de grapePink
 iter = 0
-for objeto in clavo:
+for objeto in grapePink:
     datos.append(Elemento())
-    datos[i].pieza = 'Clavo'
+    datos[i].pieza = 'grapePink'
     datos[i].image, datos[i].caracteristica = extraccion(objeto)
-    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='g', marker='o')
+    ax.scatter(datos[i].caracteristica[0], datos[i].caracteristica[1], datos[i].caracteristica[2], c='pink', marker='o')
     i += 1
     iter += 1
-print("Clavos OK")
+print("grapePink OK")
 
 ax.grid(True)
 ax.set_title("Analisis completo de Train")
 
-yellow_patch = mpatches.Patch(color='yellow', label='grapeWhite')
+yellow_patch = mpatches.Patch(color='green', label='grapeWhite')
 blue_patch = mpatches.Patch(color='blue', label='grapeBlue')
-green_patch = mpatches.Patch(color='green', label='grapePink')
+green_patch = mpatches.Patch(color='pink', label='grapePink')
 plt.legend(handles=[yellow_patch, blue_patch, green_patch])
 
 ax.set_xlabel('componente 1')
@@ -97,7 +97,7 @@ ax.set_zlabel('componente 4')
 
 plt.show()
 
-print("Analisis completo de la base de datos de YTrain")
+print("Analisis completo de la base de datos de Train")
 print("Cantidad de imagenes analizadas: ")
 print(len(datos))
 
