@@ -1,4 +1,0 @@
-tornillo    -> grapeWhite
-tuerca      -> grapeBlue
-arandela    -> grapePink
-clavo       ->
