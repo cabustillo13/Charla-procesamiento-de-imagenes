@@ -28,7 +28,7 @@ Propongo un modelo de juguete para analizar uvas blancas, rosadas y azules.
 En el cual  le presentamos una imagen al algoritmo y éste nos diga a qué clase de uva pertenece.
 ```
 
-![Ver Presentación](https://github.com/cabustillo13/Charla-procesamiento-de-imagenes/blob/master/Recursos/Charla.pdf)
+[Ver Presentación](./Recursos/Charla.pdf)
 
 ## Recursos
 
